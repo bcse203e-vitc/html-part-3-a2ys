@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Chart</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Company Organization Chart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Department Name</th>
+                <th>Manager</th>
+                <th>Number of Employees</th>
+                <th>Budget</th>
+                <th>Percentage of Total Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">HR</td>
+                <td>Koshambi Bardhan</td>
+                <td rowspan="2">15</td>
+                <td rowspan="2">₹150,000</td>
+                <td rowspan="2">10%</td>
+            </tr>
+            <tr>
+                <td>Bhargavi Deshmukh</td>
+            </tr>
+            <tr>
+                <td>Engineering</td>
+                <td>Aayush Shukla</td>
+                <td>50</td>
+                <td>₹500,000</td>
+                <td>33.33%</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Marketing</td>
+                <td>Bhargavi Deshmukh</td>
+                <td rowspan="2">30</td>
+                <td rowspan="2">₹300,000</td>
+                <td rowspan="2">20%</td>
+            </tr>
+            <tr>
+                <td>Amal M Raju</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

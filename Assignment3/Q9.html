@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .veg-icon::before {
+            content: "🌱";
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Restaurant Menu</h2>
+
+    <table>
+        <tr>
+            <th>Dish Name</th>
+            <th>Category</th>
+            <th>Ingredients</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td class="veg-icon">Bruschetta</td>
+            <td>Appetizer</td>
+            <td rowspan="2">Tomatoes, Basil, Olive Oil</td>
+            <td>$8</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td class="veg-icon">Caprese Salad</td>
+            <td>Salad</td>
+            <td>$10</td>
+            <td>★★★★☆</td>
+        </tr>
+        <tr>
+            <td class="veg-icon">Margherita Pizza</td>
+            <td>Main Course</td>
+            <td>Flour, Tomatoes, Mozzarella, Basil</td>
+            <td>$15</td>
+            <td>★★★★★</td>
+        </tr>
+        <tr>
+            <td>Grilled Chicken</td>
+            <td>Main Course</td>
+            <td>Chicken, Lemon, Herbs</td>
+            <td>$18</td>
+            <td>★★★★☆</td>
+        </tr>
+        <tr>
+            <td class="veg-icon">Chocolate Lava Cake</td>
+            <td>Dessert</td>
+            <td>Chocolate, Flour, Sugar, Eggs</td>
+            <td>$7</td>
+            <td>★★★★★</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

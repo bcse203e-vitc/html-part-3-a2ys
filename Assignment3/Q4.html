@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .international {
+            background-color: #d1e7dd;
+        }
+
+        .on-time {
+            color: green;
+        }
+
+        .delayed {
+            color: orange;
+        }
+
+        .cancelled {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Flight Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Flight Number</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Duration</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>AI101</td>
+            <td>Delhi</td>
+            <td>10:00 AM</td>
+            <td>2:30 PM</td>
+            <td><abbr title="4 hours 30 minutes">4h 30m</abbr></td>
+            <td class="on-time">On Time</td>
+        </tr>
+        <tr class="international">
+            <td>BA205</td>
+            <td>London</td>
+            <td>1:00 PM</td>
+            <td>6:15 PM</td>
+            <td><abbr title="5 hours 15 minutes">5h 15m</abbr></td>
+            <td class="delayed">Delayed</td>
+        </tr>
+        <tr>
+            <td>IN789</td>
+            <td>Mumbai</td>
+            <td>3:45 PM</td>
+            <td>7:00 PM</td>
+            <td><abbr title="3 hours 15 minutes">3h 15m</abbr></td>
+            <td class="on-time">On Time</td>
+        </tr>
+        <tr class="international">
+            <td>AF123</td>
+            <td>Paris</td>
+            <td>8:30 PM</td>
+            <td>1:00 AM</td>
+            <td><abbr title="4 hours 30 minutes">4h 30m</abbr></td>
+            <td class="cancelled">Cancelled</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
