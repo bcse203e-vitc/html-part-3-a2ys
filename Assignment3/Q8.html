@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .theoretical {
+            background-color: #ffcccb;
+        }
+
+        .practical {
+            background-color: #d4edda;
+        }
+
+        .nested-table td {
+            padding: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Exam Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Morning Slot (9:00 AM - 12:00 PM)</th>
+            <th>Afternoon Slot (1:00 PM - 4:00 PM)</th>
+            <th>Total Exams</th>
+        </tr>
+        <tr>
+            <td>March 10</td>
+            <td>
+                <table class="nested-table">
+                    <tr class="theoretical">
+                        <td>Mathematics</td>
+                        <td>3 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="nested-table">
+                    <tr class="practical">
+                        <td>Chemistry Lab</td>
+                        <td>3 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>March 11</td>
+            <td>
+                <table class="nested-table">
+                    <tr class="theoretical">
+                        <td>Physics</td>
+                        <td>3 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="nested-table">
+                    <tr class="practical">
+                        <td>Computer Science Lab</td>
+                        <td>2 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>March 12</td>
+            <td>
+                <table class="nested-table">
+                    <tr class="theoretical">
+                        <td>Biology</td>
+                        <td>3 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="nested-table">
+                    <tr class="theoretical">
+                        <td>English</td>
+                        <td>2 hrs</td>
+                    </tr>
+                </table>
+            </td>
+            <td>2</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

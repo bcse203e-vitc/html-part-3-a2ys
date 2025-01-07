@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .highlight {
+            background-color: #d1e7dd;
+            font-weight: bold;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Sales Report</h2>
+
+    <table>
+        <tr>
+            <th>Region</th>
+            <th>Salesperson</th>
+            <th>Product</th>
+            <th>Quantity Sold</th>
+            <th>Unit Price</th>
+            <th>Total Sales</th>
+        </tr>
+        <tr>
+            <td class="highlight">North</td>
+            <td>Aayush Shukla</td>
+            <td>Laptop</td>
+            <td>50</td>
+            <td>₹800</td>
+            <td>₹40,000</td>
+        </tr>
+        <tr>
+            <td>South</td>
+            <td>Koshambi Bardhan</td>
+            <td>Smartphone</td>
+            <td>120</td>
+            <td>₹500</td>
+            <td>₹60,000</td>
+        </tr>
+        <tr>
+            <td class="highlight">North</td>
+            <td>Amal M Raju</td>
+            <td>Tablet</td>
+            <td>70</td>
+            <td>₹300</td>
+            <td>₹21,000</td>
+        </tr>
+        <tr>
+            <td>West</td>
+            <td>Bhargavi Deshmukh</td>
+            <td>Headphones</td>
+            <td>200</td>
+            <td>₹50</td>
+            <td>₹10,000</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="5">Grand Total</td>
+                <td>₹131,000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

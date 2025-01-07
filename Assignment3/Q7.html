@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .keynote {
+            background-color: #ffeb3b;
+        }
+
+        .workshop {
+            background-color: #c8e6c9;
+        }
+
+        .panel {
+            background-color: #bbdefb;
+        }
+
+        .break {
+            background-color: white;
+            font-style: italic;
+        }
+
+        .legend {
+            margin-top: 10px;
+        }
+
+        .legend span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Conference Timetable</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Room A</th>
+            <th>Room B</th>
+            <th>Room C</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td class="keynote" colspan="3" title="Speaker: Koshambi Bardhan | Topic: The Future of AI">
+                Keynote: The Future of AI
+            </td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td class="workshop" title="Speaker: Aayush Shukla | Workshop: Advanced Python Programming">
+                Python Workshop
+            </td>
+            <td class="panel" title="Panelists: Bhargavi Deshmukh | Topic: Climate Change Solutions">
+                Climate Change Panel
+            </td>
+            <td class="workshop" title="Speaker: Amal M Raju | Workshop: UX Design Essentials">
+                UX Design Workshop
+            </td>
+        </tr>
+        <tr>
+            <td>11:00 - 11:30</td>
+            <td class="break" colspan="3">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td>11:30 - 1:00</td>
+            <td class="workshop" rowspan="2" title="Speaker: Amal M Raju | Workshop: Data Science Bootcamp">
+                Data Science Bootcamp
+            </td>
+            <td class="panel" title="Panelists: Koshambi Bardhan, Bhargavi Deshmukh | Topic: Women in Tech">
+                Women in Tech Panel
+            </td>
+            <td class="workshop" rowspan="2" title="Speaker: Aayush Shukla | Workshop: Blockchain for Beginners">
+                Blockchain Basics
+            </td>
+        </tr>
+        <tr>
+            <td>12:00 - 1:00</td>
+            <td class="keynote" title="Speaker: Prof. Sandeep Kumar Satapathy | Topic: Innovations in Renewable Energy">
+                Renewable Energy Innovations
+            </td>
+        </tr>
+        <tr>
+            <td>1:00 - 2:00</td>
+            <td class="break" colspan="3">
+                Lunch Break
+            </td>
+        </tr>
+        <tr>
+            <td>2:00 - 3:00</td>
+            <td class="workshop" title="Speaker: Bhargavi Deshmukh | Workshop: Mastering Public Speaking">
+                Public Speaking Workshop
+            </td>
+            <td class="panel" colspan="2" title="Panelists: Koshambi Bardhan | Topic: Emerging Tech Trends">
+                Emerging Tech Trends Panel
+            </td>
+        </tr>
+    </table>
+
+    <!-- Legend -->
+    <div class="legend">
+        <h3>Legend:</h3>
+        <p><span class="keynote"></span> Keynote</p>
+        <p><span class="workshop"></span> Workshop</p>
+        <p><span class="panel"></span> Panel</p>
+        <p><span class="break"></span> Break</p>
+    </div>
+
+</body>
+
+</html>
